@@ -5,6 +5,8 @@
 // Ya que muchas veces al ejecutarlo de fomra local no se aprecia bien el funcionamiento.
 sleep(3);
 
+// ini_set("display_errors", 1);
+
 // Definimos variables generales
 
 define("maxUpload", 50000);
@@ -42,7 +44,7 @@ $num = count($extension)-1;
 
 
 // Creamos el nombre del archivo dependiendo la opción
-$imgFile = fileName.mktime().'.'.$extension[$num];
+$imgFile = fileName.time().'.'.$extension[$num];
 
 // Verificamos el tamaño válido para los logotipos
 if($imageSize[0] == maxWidth && $imageSize[1] == maxHeight)

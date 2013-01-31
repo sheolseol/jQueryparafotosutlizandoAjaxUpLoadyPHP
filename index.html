@@ -29,6 +29,9 @@
 					}
 				},
 				onComplete: function(file, response){
+
+					// alert(response);
+					
 					btn_firma.text('Cambiar Imagen');
 					
 					respuesta = $.parseJSON(response);
@@ -54,6 +57,7 @@
 	    <header class="headerLayout">
 	      <h2>upLoad de Archivos con Ajax</h2>
 	    </header>
+
 	    <section class="contentLayout" id="contentLayout">
 	    	<div id="contenedorImagen">
 	    		<img id="fotografia" class="fotografia" src="images/nofoto.jpg">
@@ -67,6 +71,7 @@
 		    </div>
 
 	    </section>
+
  	</div>
   	<footer>
 	        Powered by Luis Fernando Cázares Bulbarela || 2012
